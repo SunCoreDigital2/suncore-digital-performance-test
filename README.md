@@ -83,7 +83,7 @@ DEMO_PASSCODE=XXXXXXXX locust -f locustfile.py --headless -u 1 -r 1 -t 2m
 
 ## Rules
 
-- Get sign-off from the dev team before running anything beyond a smoke test. Load tests can trip WAF/rate limiting and slow the shared demo for everyone.
+- Get sign-off from the developers before running anything beyond a smoke test. Load tests can trip WAF/rate limiting and slow the shared demo for everyone.
 - Run during quiet periods, not during client demos.
 - **Never run against Production** without a planned window.
 - Never commit passcodes, tokens or reports containing them.
