@@ -6,12 +6,12 @@ hitting the gate's rate limit with every simulated user, the passcode is redeeme
 ONCE at the start of the run and the resulting cookie is shared by all users.
 
 Usage (from the repo root):
-    pip install -r load-tests/requirements.txt
-    DEMO_PASSCODE=XXXXXXXX locust -f load-tests/locustfile.py
+    pip install -r requirements.txt
+    DEMO_PASSCODE=XXXXXXXX locust -f locustfile.py
 
 Headless example (100 users, ramp 5/sec, 10 minutes, HTML report):
-    DEMO_PASSCODE=XXXXXXXX locust -f load-tests/locustfile.py --headless \
-        -u 100 -r 5 -t 10m --html load-tests/reports/report.html
+    DEMO_PASSCODE=XXXXXXXX locust -f locustfile.py --headless \
+        -u 100 -r 5 -t 10m --html reports/report.html
 
 Get a passcode by running any Playwright test that uses the demoUser fixture,
 or ask for one from the demo admin. Passcodes expire after 1 day.
